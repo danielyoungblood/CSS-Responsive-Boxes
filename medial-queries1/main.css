@@ -1,3 +1,46 @@
 body {
   background: blanchedalmond;
 }
+
+.a {
+  background-color: orange;
+  flex-grow: 1;
+  margin: 3px;
+}
+
+.b {
+  background-color: rgb(59, 195, 59);
+  flex-grow: 3;
+  margin: 3px;
+}
+
+.c {
+  background-color: pink;
+  flex-grow: 1;
+  margin: 3px;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .a {
+    width: 100%;
+    background-color: grey;
+  }
+
+  .b,
+  .c,
+  .a {
+    margin: 1em;
+  }
+}
