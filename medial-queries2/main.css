@@ -12,6 +12,7 @@ body {
   min-height: 100vh;
   flex-direction: column;
   justify-content: space-between;
+  background-color: rgb(203, 8, 155);
 }
 
 .wrapper {
@@ -22,6 +23,8 @@ body {
   justify-content: space-between;
   align-items: center;
   min-height: 70vh;
+  background-color: aqua;
+  border-width: 5px;
 }
 
 header,
@@ -38,21 +41,34 @@ aside {
   justify-content: space-between;
   width: 90%;
   min-height: 20vh;
+  background-color: rgb(224, 217, 14);
+  border-width: 2px;
+  border-color: rgb(43, 46, 226);
 
 }
 
 aside>div {
   flex-grow: 10;
   margin: .5em;
-  /* min-width: 20vh; */
 }
 
 main {
   width: 90%;
   flex-grow: 3;
   margin: .5em;
+  background-color: pink;
+  font-weight: bolder;
 }
 
+header {
+  background-color: rgba(240, 240, 17, 0.89);
+  border-width: 1px;
+}
+
+footer {
+  background-color: rgb(66, 83, 98);
+  border-width: 2px;
+}
 
 @media (min-width: 600px) {
   .container {
@@ -63,6 +79,7 @@ main {
   header {
     width: 100%;
     max-height: 10vh;
+    background-color: rgba(98, 98, 212, 0.663);
   }
 
   .wrapper {
@@ -75,5 +92,21 @@ main {
     margin: .5em;
     flex-grow: 3;
     min-height: 80vh;
+    background-color: rgb(240, 137, 12);
   }
+}
+
+.c {
+  background-color: blueviolet;
+  border-width: 4px;
+}
+
+.d {
+  background-color: brown;
+  border-width: 3px;
+}
+
+.e {
+  background-color: rgba(7, 104, 5, 0.71);
+  border-width: 6px;
 }
