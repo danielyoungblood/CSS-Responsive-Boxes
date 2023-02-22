@@ -1,5 +1,5 @@
 body {
-  background: papayawhip;
+  background: peachpuff;
 }
 
 * {
@@ -9,118 +9,64 @@ body {
 
 .container {
   display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: rgb(203, 8, 155);
-}
-
-.wrapper {
-  display: flex;
+  /*min-height: 100vh; */
+  justify-content: stretch;
   flex-wrap: wrap;
-  flex-direction: column;
-  flex-grow: 2;
-  align-items: center;
-  background-color: aqua;
-  border-width: 5px;
-  align-content: stretch;
-  flex-basis: 70%;
-  min-height: 80vh;
-}
-
-header,
-footer,
-aside,
-.wrapper {
-  flex-grow: 1;
-  margin: .5em;
-  max-height: 10vh;
-}
-
-aside1 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 90%;
-  min-height: 20vh;
-  background-color: rgb(224, 217, 14);
-  border-width: 2px;
-  border-color: rgb(43, 46, 226);
-
-}
-
-aside2 {
-    display: flex;
-    flex-wrap: wrap;
-    width: 90%;
-    min-height: 20vh;
-    background-color: rgb(224, 217, 14);
-    border-width: 2px;
-    border-color: rgb(43, 46, 226);
-}
-
-aside1>div {
-  flex-grow: 10;
-  margin: .5em;
-  flex-wrap: wrap;
-}
-
-main {
-  width: 90%;
-  flex-grow: 3;
-  margin: .5em;
-  background-color: pink;
-  font-weight: bolder;
+  background-color: greenyellow;
 }
 
 header {
-  background-color: rgba(240, 240, 17, 0.89);
-  border-width: 1px;
+  width: 100%;
+  height: 10em;
+  /*margin-bottom: 0px;*/
+  background-color: blueviolet;
 }
 
-footer {
-  background-color: rgb(66, 83, 98);
-  border-width: 2px;
-  flex-grow: 2;
+.wrapper {
+  width: 100%;
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
 }
+
+aside {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-grow: 1;
+  right: 0px;
+  background-color: aqua;
+}
+
+aside>div {
+  width: 28%;
+  background: gray;
+  margin: 2vw;
+}
+
+main {
+  flex-grow: 4;
+  background-color: brown;
+}
+
 
 @media (min-width: 600px) {
-  .container {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  header {
-    width: 100%;
-    max-height: 10vh;
-    background-color: rgba(98, 98, 212, 0.663);
-  }
-
   .wrapper {
-    justify-content: stretch;
-    flex-basis: 70%;
-    min-height: 80vh;
+    flex-direction: row;
   }
 
-  footer {
-    margin: .5em;
-    flex-grow: 3;
-    min-height: 80vh;
-    background-color: rgb(240, 137, 12);
+  aside {
+    width: 80%;
+    align-items: center;
   }
-}
 
-.c {
-  background-color: blueviolet;
-  border-width: 4px;
-}
+  aside>div {
+    height: 70em;
+  }
 
-.d {
-  background-color: brown;
-  border-width: 3px;
-}
-
-.e {
-  background-color: rgba(7, 104, 5, 0.71);
-  border-width: 6px;
+  main {
+    flex: 2;
+    margin-top: 15px;
+  }
 }
